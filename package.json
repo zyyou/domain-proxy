@@ -1,15 +1,15 @@
 {
   "name": "domain-proxy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "前后分离项目静态服务器，支持跨域代理",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "http-proxy-middleware": "^1.0.3",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.3.0",
     "koa-static": "^5.0.0",
     "koa2-connect": "^1.0.2"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "./bin/domain-proxy.js",
     "release": "clear && git checkout master && git merge dev && git push origin master && nrm use npm && npm publish && git checkout dev"

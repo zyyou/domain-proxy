@@ -1,6 +1,6 @@
 {
   "name": "domain-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "前后分离项目静态服务器，支持跨域代理",
   "dependencies": {},
   "devDependencies": {
@@ -13,6 +13,9 @@
   "scripts": {
     "test": "./bin/domain-proxy.js",
     "release": "clear && git checkout master && git merge dev && git push origin master && nrm use npm && npm publish && git checkout dev"
+  },
+  "bin": {
+    "domain-proxy": "bin/domain-proxy.js"
   },
   "repository": {
     "type": "git",
